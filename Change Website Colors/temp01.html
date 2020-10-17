@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="the first document i write!">
+    <title>
+        Change Website Colors
+    </title>
+    <style>
+        body{font-family: 'Open Sans', 'sans-serif'; font-size: 18px}
+
+        .container{margin: 20px auto; width: 1200px}
+
+        .container .color-switch {list-style: none;     margin-bottom: 20px;    text-align: center}
+
+        .container .color-switch li
+        {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            display: inline-block
+        }
+
+        .container .color-switch li:active
+        {
+            transform: rotate(80deg);
+            transition: ease-in-out .5s 
+        }
+
+        .container .color-switch li:first-child  {background-color: crimson;          }
+        .container .color-switch li:nth-child(2) {background-color: rgb(42, 218, 136);  }
+        .container .color-switch li:nth-child(3) {background-color: rgb(52, 55, 247);   }
+        .container .color-switch li:last-child   {background-color: rgb(169, 225, 65);  }
+
+        .red .container h3{color: crimson}
+        .red .container div{background-color: crimson;       padding: 20px;    color: #fff}
+
+        .blue .container h3{color: rgb(42, 218, 136)}
+        .blue .container div{background-color: rgb(42, 218, 136);       padding: 20px;    color: #fff}
+
+        .green .container h3{color: rgb(52, 55, 247)}
+        .green .container div{background-color: rgb(52, 55, 247);       padding: 20px;    color: #fff}
+
+        .black .container h3{color: rgb(169, 225, 65)}
+        .black .container div{background-color: rgb(169, 225, 65);       padding: 20px;    color: #fff}      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="color-switch">
+            <li data-color="red"></li>
+            <li data-color="blue"></li>
+            <li data-color="green"></li>
+            <li data-color="black"></li>
+        </ul>
+        <h3> Heading </h3>
+        <div> Teasting </div>
+    </div>
+    <script src="temp01.js"></script>
+</body>
+</html>

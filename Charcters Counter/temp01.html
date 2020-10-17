@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="the first document i write!">
+    <title>
+         Charcters Counter
+    </title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{font-family: 'Open Sans', 'sans-serif'; font-size: 18px}
+
+        h2{
+           margin: 20px auto;
+           text-align: center;
+           color: crimson
+        }
+        .container
+        {
+            width: 900px;
+            margin: 10px auto
+        }
+
+        textarea
+        {
+            margin:auto;
+            width: 100%;
+            height: 120px;
+            border:10px solid crimson;
+            resize: none;
+            font-size: 25px;
+        }
+
+        #counter {
+            margin: 20px auto;
+            width: 100%;
+            background-color: crimson;
+            line-height: 20px;
+            font-size: 30px;
+            padding: 20px;
+            color: #fff;
+            text-align: center
+        }
+
+        #viewer 
+        {
+            margin: 20px auto;
+            width: 100%;
+            color: crimson;
+            line-height: 20px;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>COUNT THE CHARACHTERS</h2>
+    <div class="container">
+        <textarea maxlength="120" id="textrea"></textarea>
+        <div id="counter">-120-</div>
+        <div id="viewer"></div>
+    </div>
+    <script src="temp01.js"></script>
+</body>
+</html>

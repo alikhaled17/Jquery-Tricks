@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="the first document i write!">
+    <title>
+        Change Words Capitalize
+    </title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{font-family: 'Open Sans', 'sans-serif'; font-size: 18px}
+
+        .container
+        {
+            width: 900px;
+            margin: 10px auto
+        }
+
+        textarea
+        {
+            margin:auto;
+            width: 100%;
+            height: 120px;
+            border:10px solid rgb(199, 15, 52);
+            resize: none;
+            font-size: 25px;
+        }
+
+        h2{
+           margin: 20px auto;
+           text-align: center;
+           color: rgb(199, 15, 52)
+        }
+        button
+        {
+            width: 100%;
+            background-color: rgb(199, 15, 52);
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+
+        }
+
+        #view {
+            margin: 20px auto;
+            width: 75%;
+            height: 75px;
+            background-color: crimson;
+            color: #fff;
+            line-height: 20px;
+            padding: 20px;
+            opacity: 0;
+            transition: all .6s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>C A P I T A L I Z E</h2>
+    <div class="container">
+        <textarea maxlength="120" id="textrea"></textarea>
+        <button id="butt">Go</button>
+        <div id="view">
+        
+        </div>
+    </div>
+    <script src="temp01.js"></script>
+</body>
+</html>

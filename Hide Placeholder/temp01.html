@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="the first document i write!">
+    <title>
+         Hide Placeholder &amp; Type Writer
+    </title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{font-family: 'Open Sans', 'sans-serif'; font-size: 18px}
+
+        h2{
+           margin: 20px auto;
+           text-align: center;
+           color: crimson
+        }
+        .container
+        {
+            width: 900px;
+            margin: 10px auto
+        }
+
+        input
+        {
+            margin:auto;
+            width: 100%;
+            border:2px solid crimson;
+            font-size: 25px;
+        }
+
+        button
+        {
+            margin: 10px 0;
+            width: 100%;
+            background-color: rgb(199, 15, 52);
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #viewer {
+            margin: 20px auto;
+            width: 100%;
+            color: crimson;
+            line-height: 20px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Hide Placeholder &amp; Type Writer</h2>
+    <div class="container">
+        <!-- Hide Placeholder -->
+        <input id="myInput" type="text" placeholder="Text Here..">
+        <!-- Make Type Writer Effects -->
+        <button id="mybutton">Make Type Writer Effects</button>
+        <div id="viewer"></div>
+    
+    </div>
+    <script src="temp01.js"></script>
+</body>
+</html>
